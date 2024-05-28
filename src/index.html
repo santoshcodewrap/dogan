@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- navigation menu  -->
+  <header class="position-sticky top-0 bg-dark px-xl-3 z-3">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="./">
+          <img src="./images/Dogan Logo-22.png" alt="logo image" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fw-medium ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./booking.html">My Booking Hajj 2024</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Our Social Network
+              </a>
+              <ul class="dropdown-menu shadow">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-facebook-f"></i> Facebook</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu shadow dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">French</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- hero section start  -->
+  <section class="position-relative bg-dark">
+    <section id="carouselExampleInterval" class="carousel carousel-fade opacity-50" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/hero/Pic1.webp" class="d-block w-100" alt="slide one">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero/pic2.webp" class="d-block w-100" alt="slide two">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero/maka5.webp" class="d-block w-100" alt="slide three">
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+    </section>
+    <!-- form section start  -->
+    <section class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center z-2 text-white hero-form">
+      <div class="mx-auto" style="width: 90%">
+        <header class="text-center">
+          <h1 class="display-5 fw-bold">Your Umrah, Our Amana</h1>
+          <p class="lead fw-medium">With Dogan Voyages</p>
+        </header>
+        <main>
+          <form action="./booking-details.html" class="row">
+            <div class="col-sm-6 col-md-4 mb-3">
+              <label for="first" class="form-label w-100 fw-semibold mb-2 fs-5">Type of Trip</label>
+              <select class="form-select rounded px-3 py-2">
+                <option value="0">Choose</option>
+                <option value="0">option two</option>
+                <option value="0">option three</option>
+                <option value="0">option four</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <label for="first" class="form-label w-100 fw-semibold mb-2 fs-5">City</label>
+              <select class="form-select rounded px-3 py-2">
+                <option value="0">Choose</option>
+                <option value="0">option two</option>
+                <option value="0">option three</option>
+                <option value="0">option four</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <label for="startby" class="form-label w-100 fw-semibold mb-2 fs-5">Start By</label>
+              <select class="form-select rounded px-3 py-2">
+                <option value="0">Choose</option>
+                <option value="0">MECCA</option>
+                <option value="0">MEDINA</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <label for="first" class="form-label w-100 fw-semibold mb-2 fs-5">Package</label>
+              <select class="form-select rounded px-3 py-2">
+                <option value="0">Choose</option>
+                <option value="0">option two</option>
+                <option value="0">option three</option>
+                <option value="0">option four</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <span class="mb-2 d-inline-block fw-semibold fs-5">
+                Room - Adults/Infants</span>
+              <div class="dropdown" id="count-container">
+                <button data-bs-auto-close="false"
+                  class="btn bg-white text-start fs-7 py-2 text-black w-100 dropdown-toggle d-flex align-items-center justify-content-between"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false" id="count-main">
+                  <span>Room <span class="room-count">0</span> , Adult <span class="adult-count">0</span>, Infant <span
+                      class="infant-count">0</span></span>
+                </button>
+                <ul class="dropdown-menu w-100 fs-7">
+                  <li class="dropdown-item-text fw-semibold">Available Rooms</li>
+                  <div class="dropdown-divider"></div>
+                  <li class="dropdown-item-text">
+                    <div class="mb-1">
+                      <label class="form-label">
+                        <input type="radio" name="roomType" class="room-type form-check-inline" value="Double">
+                        Double
+                      </label>
+                    </div>
+                    <div class="mb-1">
+                      <label class="form-label">
+                        <input type="radio" name="roomType" class="form-check-inline" value="Triple">
+                        Triple
+                      </label>
+                    </div>
+                    <div class="mb-1">
+                      <label class="form-label">
+                        <input type="radio" name="roomType" class="form-check-inline" value="Quad">
+                        Quad
+                      </label>
+                    </div>
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <li class="dropdown-item-text fw-semibold">Number of Adult/infant</li>
+                  <div class="dropdown-divider"></div>
+                  <li class="dropdown-item-text">
+                    Adults
+                    <span class="fw-medium mx-2" id="adult">
+                      <button type="button" class="btn btn-light border-secondary-subtle fw-medium">-</button>
+                      <span id="adult-count" class="d-inline-block p-1"></span>
+                      <button type="button" class="btn btn-light border-secondary-subtle fw-medium">+</button>
+                    </span>
+                    Infants
+                    <span class="fw-medium ms-2" id="infant">
+                      <button type="button" class="btn btn-light border-secondary-subtle fw-medium">-</button>
+                      <span id="infant-count" class="d-inline-block p-1">0</span>
+                      <button type="button" class="btn btn-light border-secondary-subtle fw-medium">+</button>
+                    </span>
+                  </li>
+                  <li class="dropdown-item-text pt-4">
+                    <button type="button" class="btn btn-dark w-100" id="count-submit">OK</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- <label for="first" class="form-label w-100 fw-semibold mb-2 fs-5">Room-Adults/infants</label>
+              <select class="form-select rounded px-3 py-2">
+                <option value="0">Choose</option>
+                <option value="0">option two</option>
+                <option value="0">option three</option>
+                <option value="0">option four</option>
+              </select> -->
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3">
+              <label for="departureDate" class="form-label w-100 fw-semibold mb-2 fs-5">Departure Date</label>
+              <input type="text" name="departureDate" id="departureDate" class="form-control" placeholder="mm-dd-yyyy">
+
+            </div>
+            <div class="col text-center">
+              <button class="btn btn-warning-dark px-5 fw-bold  rounded-1">SEARCH</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </section>
+    <!-- form section end  -->
+
+  </section>
+  <!-- hero section end  -->
+
+  <!-- main section start  -->
+  <main class="container py-5">
+    <!-- package section start  -->
+    <section class="mb-4">
+      <header class="text-center mb-5">
+        <h3 class="fs-2 fw-bold">Our Different Packages</h3>
+      </header>
+      <div class="slider">
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- package section end  -->
+    <!-- Ramadan package section start  -->
+    <section class="mb-4">
+      <header class="text-center mb-5">
+        <h3 class="fs-2 fw-bold">Our Ramadan Packages</h3>
+      </header>
+      <div class="slider">
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 px-2">
+          <div class="card shadow">
+            <img src="./images/packages/TulipGrand Ramadan(EN).webp" alt="package image" class="card-img-top">
+            <div class="card-body">
+              <h4 class="text-center text-indico">VALY + VACCO</h4>
+              <hr>
+              <ul style="list-style-type:disc;">
+                <li>Round-trip flights included</li>
+                <li>Transfers included</li>
+                <li>Meals: Breakfast Included </li>
+                <li>Medina: MYSK TOUCH 3* - 500 m </li>
+                <li>Mecca: SHERATON 5* - 570 m </li>
+                <li>11 nights </li>
+                <li>Departure from PARIS , LYON , DUSSELDORF AND MARSEILLE </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Ramadan package section end  -->
+    <!-- why choose us section start  -->
+    <section class="container">
+      <header class="text-center mb-5">
+        <h3 class="fs-2 fw-bold">Why Choose Dogan Voyages</h3>
+      </header>
+      <div class="row">
+        <section class="col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/shutterstock_192194147.jpg" alt="image" class="img-fluid">
+          <p class="fw-semibold fs-5 mb-2">THE CHOICE</p>
+          <p class="small">
+            We have selected for you various options for the duration of your stay, and hotel categories in Saudi
+            Arabia.
+          </p>
+        </section>
+        <section class="col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/shutterstock_531434593.jpg" alt="image" class="img-fluid">
+          <p class="fw-semibold fs-5 mb-2">THE PRICE</p>
+          <p class="small">
+            We have negotiated flight and hotel prices for you to offer the most advantageous market prices.
+          </p>
+        </section>
+        <section class="col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/shutterstockblue_150x150.png" alt="image" class="img-fluid">
+          <p class="fw-semibold fs-5 mb-2">THE ALL-IN-ONE UMRAH</p>
+          <p class="small">
+            In just a few clicks, you can easily book all the services for your Umrah on one comprehensive Website.
+          </p>
+        </section>
+        <section class="col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/shutterstock_340774508.jpg" alt="image" class="img-fluid">
+          <p class="fw-semibold fs-5 mb-2">AMANA</p>
+          <p class="small">
+            With more than 30 years of experience in organizing Hajj and Umrah, our primary goal is to uphold the Amana
+            placed in us.
+          </p>
+        </section>
+      </div>
+    </section>
+    <!-- why choose us section end  -->
+  </main>
+  <!-- main section end  -->
+  <!-- footer section start  -->
+  <footer class="bg-light pt-5 border-top">
+    <div class="container">
+      <div class="row justify-content-between">
+        <section class="col-sm-6 col-lg-3 mb-3">
+          <a href="./" class="btn mb-3">
+            <img src="./images/Dogan Logo-21.png" alt="logo image" height="50px">
+          </a>
+          <address>
+            <i class="fa fa-location"></i> London: 471 Lea Bridge Rd E10 7EA
+          </address>
+          <i class="fa fa-phone"></i> <a href="tel:+44-999-9999-999 " class="btn">+44-999-9999-999 </a>
+          <br>
+          <i class="fa fa-envelope"></i> <a href="mailto:abc@gmail.com" class="btn">abc@gmail.com</a>
+        </section>
+        <section class="col-sm-5 col-lg-2 mb-3">
+          <p class="fw-semibold fs-5">Our Company</p>
+          <ul class="list-unstyled">
+            <li><a href="./contact.html" class="btn">Contact us</a></li>
+            <li><a href="./about.html" class="btn">About us</a></li>
+          </ul>
+        </section>
+        <section class="col-sm-6 col-lg-3 mb-3">
+          <p class="fw-semibold fs-5">Our Legal Notice</p>
+          <ul class="list-unstyled">
+            <li><a href="./privacy-policy.html" class="btn">Privacy Policy</a></li>
+            <li><a href="./terms&use.html" class="btn">General Terms of use (GTU)</a></li>
+            <li><a href="./sales-condition.html" class="btn">General Sales Conditions</a></li>
+            <li><a href="./legal-mentions.html" class="btn">Legal Mentions</a></li>
+          </ul>
+        </section>
+        <section class="col-sm-5 col-lg-3 mb-3">
+          <p class="fw-semibold fs-5">Our Social Network</p>
+          <a href="#" class="btn text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+          <a href="#" class="btn text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg></a>
+          <p class="mt-3">
+            <img src="./images/dv-payment-methods.png" alt="payment option method image" height="30px">
+          </p>
+        </section>
+      </div>
+    </div>
+    <p class="text-center container-fluid border-top pt-3 text-dark">© Copyright Dogan Voyages 2024</p>
+  </footer>
+  <!-- footer section end  -->
+  <a href="#top"
+    class="position-fixed bottom-0 end-0 btn btn-warning-dark rounded-circle me-3 mb-3 d-flex justify-content-center align-items-center"
+    style="width: 40px; height: 40px">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+  <!-- <script src="./js/popper.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(function () {
+      $('#adult #adult-count').text(1);
+      $('#adult #infant-count').text(0);
+      $('#adult button:first-child').click(function () {
+        let count = $('#adult #adult-count').text();
+        if (count > 1) {
+          count--;
+        }
+        $('#adult #adult-count').text(count);
+        $('.adult-count').text(count);
+
+      })
+      $('#adult button:last-child').click(function () {
+        let count = $('#adult #adult-count').text();
+        if (count < 4) {
+          count++;
+        }
+        $('#adult #adult-count').text(count);
+        $('.adult-count').text(count);
+
+      })
+      $('#infant button:first-child').click(function () {
+        let count = $('#infant #infant-count').text();
+        if (count > 0) {
+          count--;
+        }
+        $('#infant #infant-count').text(count);
+        $('.infant-count').text(count);
+
+      })
+      $('#infant button:last-child').click(function () {
+        let count = $('#infant #infant-count').text();
+        if (count < 4) {
+          count++;
+        }
+        $('#infant #infant-count').text(count);
+        $('.infant-count').text(count);
+
+      })
+
+      $("input[name='roomType']").change(function () {
+        // console.log($(this).val())
+        $("input[name='roomType']").parent().removeClass("text-danger")
+        // $("input[name='roomType']").attr('checked', true);
+        $(this).attr('checked', true);
+        $(".room-count").text($(this).val())
+
+        // console.log('radio click')
+      })
+   
+      // hiding dropdown menu and checking validation
+      $("#count-submit").click(function () {
+        // validation check 
+        if ($("input[name='roomType']:checked").val() === undefined) {
+          alert("Please select room type.")
+          $("input[name='roomType']").parent().addClass("text-danger")
+          // console.log($("input[name='roomType']:checked").val() === undefined)
+          return
+        }
+
+
+        $("input[name='roomType']").parent().removeClass("text-danger")
+        $('#count-main').attr('data-bs-auto-close', true)
+        $('#count-main').attr('aria-expanded', false)
+        $('#count-container .dropdown-menu').toggleClass("show")
+      })
+    })
+  </script>
+</body>
+
+</html>
